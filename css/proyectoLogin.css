@@ -1,0 +1,40 @@
+*
+{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+
+}
+body
+{
+  display: flex;
+  height: 100vh;
+  flex-direction: column;
+  justify-content: space-between;
+  background-image: url("../img/doctor.jpg");
+}
+
+nav,footer{
+  background-color: rgba(34, 47, 119, 0.85);
+  height: 15%;}
+
+section
+{
+
+}
+
+#boton1,#boton2 {
+background : #3E52A1;
+font-weight : bolder;
+color: white;
+PADDING-RIGHT: 3px; PADDING-LEFT: 3px;
+PADDING-BOTTOM: 3px; PADDING-TOP: 3px;
+margin: 10px;
+width: 100px;
+ }
+ #usuario,#contraseña
+ {
+    margin: 0 0 10px 0;
+   height: 40px;
+   width: 250px;
+ }

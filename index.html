@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <meta name="description" content="Informacion de EndoClinic">
+	  <meta name="keywords" content="Informacion y registro">
+  	<meta name="author" content="Jesus Chavez, Christian Perez, Daniel Alejandor, Juan Gaxiola, Eduardo Torres">
+    <title>EndoClinic | Bienvenidos</title>
+    <link rel="stylesheet" href="css/estilos.css">
+  </head>
+  <body>
+    <header>
+      <div class="contenedor">
+        <div id="marca">
+
+        </div>
+        <nav>
+          <ul>
+            <li class="actual"><a href="index.html">Inicio</a></li>
+            <li><a href="nosotros.html">Nosotros</a></li>
+            <li><a href="servicios.html">Doctores</a></li>
+            <li><a href="contacto.html">Registrate</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <section id="cabecera">
+      <div class="contenedor">
+
+      	  <div class="fotos" style="max-width:500px">
+    <img class="mySlides" src="img/baner1.png" >
+    <img class="mySlides" src="img/baner2.png" >
+    <img class="mySlides" src="img/baner3.png" >
+  </div>
+  <script>
+  var myIndex = 0;
+  carousel();
+  function carousel() {
+      var i;
+      var x = document.getElementsByClassName("mySlides");
+      for (i = 0; i < x.length; i++) {
+         x[i].style.display = "none";
+      }
+      myIndex++;
+      if (myIndex > x.length) {myIndex = 1}
+      x[myIndex-1].style.display = "block";
+      setTimeout(carousel, 5000); // Change image every 2 seconds
+  }
+  </script>
+      <!--  <h1>Profesionales Expertos en Tecnologías Web</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu luctus ipsum, rhoncus semper magna. Nulla nec magna sit amet sem interdum condimentum.</p>
+      </div> -->
+    </section>
+
+    <section id="boletin">
+      <div class="contenedor">
+        <h1>Subscríbete a nuestro consultorio</h1>
+        <form>
+          <button type="button" class="boton1" onclick="location.href='contacto.html'">Subscríbete</button>
+          <button type="button" class="boton2" onclick="location.href='login.html'">Iniciar Sesion</button>
+        </form>
+      </div>
+    </section>
+
+    <section id="cajas">
+      <div class="contenedor">
+        <div class="caja">
+          <img src="./img/send.png">
+          <h3>Falcil de contacto</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus mi augue, viverra sit amet ultricies</p>
+        </div>
+        <div class="caja">
+          <img src="./img/star.png">
+          <h3>Unico en servicios</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus mi augue, viverra sit amet ultricies</p>
+        </div>
+        <div class="caja">
+          <img src="./img/save.png">
+          <h3>Llevamos Seguimiento</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus mi augue, viverra sit amet ultricies</p>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <p>EndoClinic, Copyright &copy; 2017</p>
+    </footer>
+  </body>
+</html>

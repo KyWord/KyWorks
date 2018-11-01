@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <meta name="description" content="Informacion de EndoClinic">
+  <meta name="keywords" content="Informacion y registro">
+  <meta name="author" content="Jesus Chavez, Christian Perez, Daniel Alejandor, Juan Gaxiola, Eduardo Torres">
+  <title>EndoClinic--Contacto</title>
+   <link rel="stylesheet" href="css/bootstrap.min.css" />
+   
+  <link rel="stylesheet" href="css/estilos.css">
+</head>
+
+<body>
+  <header>
+    <div class="contenedor">
+      <div id="marca">
+
+      </div>
+      <nav>
+        <ul>
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="nosotros.html">Nosotros</a></li>
+          <li><a href="servicios.html">Doctores</a></li>
+          <li class="actual"><a href="contacto.html">Registrate</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section id="boletin">
+    <div class="contenedor">
+      <h1 class="display-4">Suscribete</h1>
+      
+      <form>
+        <input type="email" placeholder="Ingrese el Email...">
+        <button type="submit" class="boton1">Suscribirse</button>
+      </form>
+    </div>
+  </section>
+
+  <section id="main">
+    <div class="contenedor">
+      <article id="main-col">
+        <h1>Contacto</h1>
+         <p class="text-danger small "> Uno de nuestros asistentes se pondra en contacto contigo para agendar una cita por correo electronico</p>
+ <div class="form">
+ <form action="controlador/controlador.php" method="POST">
+
+ <label for="nombre"> Matricula de la cita</label>
+
+<input type="text" name="nombre" placeholder="Matricula" required>
+
+<label for="correo">Direccion de correo</label>
+
+<input type="email" name="correo" placeholder="alguien@Algo.com"required>
+
+
+<label for="correo">Nombre</label>
+
+<input type="text" name="carrera" placeholder="Nombre"required>
+
+
+<label for="correo">Apellido</label>
+
+<input type="text" name="matricula" placeholder="Apellido"required>
+
+
+<input type="submit" value="Registrar Alumno">
+
+
+
+</form>
+</div>
+      </article>
+
+      <aside id="lateral">
+        <div class="oscuro">
+          <h3>Que hacemos</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec varius auctor lacus nec feugiat. Phasellus sit amet ex ipsum. Praesent pharetra tincidunt tempor. Etiam velit eros, dapibus eget porta in, lacinia et magna</p>
+        </div>
+      </aside>
+    </div>
+  </section>
+
+  <footer>
+    <p>EndoClinic, Copyright &copy; 2017</p>
+  </footer>
+    <script src="js/pooper.min.js"></script>
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+</body>
+
+</html>
