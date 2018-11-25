@@ -1,96 +1,72 @@
 <!DOCTYPE html>
 <html>
-
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
-  <meta name="description" content="Informacion de EndoClinic">
-  <meta name="keywords" content="Informacion y registro">
-  <meta name="author" content="Jesus Chavez, Christian Perez, Daniel Alejandor, Juan Gaxiola, Eduardo Torres">
-  <title>EndoClinic--Contacto</title>
-   <link rel="stylesheet" href="css/bootstrap.min.css" />
-   
-  <link rel="stylesheet" href="css/estilos.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css" />
+<title>Ky Works | Contacto</title>
 </head>
-
 <body>
-  <header>
-    <div class="contenedor">
-      <div id="marca">
-
-      </div>
-      <nav>
-        <ul>
-          <li><a href="index.html">Inicio</a></li>
-          <li><a href="nosotros.html">Nosotros</a></li>
-          <li><a href="servicios.html">Doctores</a></li>
-          <li class="actual"><a href="contacto.html">Registrate</a></li>
-        </ul>
-      </nav>
-    </div>
-  </header>
-
-  <section id="boletin">
-    <div class="contenedor">
-      <h1 class="display-4">Suscribete</h1>
-      
-      <form>
-        <input type="email" placeholder="Ingrese el Email...">
-        <button type="submit" class="boton1">Suscribirse</button>
-      </form>
-    </div>
-  </section>
-
-  <section id="main">
-    <div class="contenedor">
-      <article id="main-col">
-        <h1>Contacto</h1>
-         <p class="text-danger small "> Uno de nuestros asistentes se pondra en contacto contigo para agendar una cita por correo electronico</p>
- <div class="form">
- <form action="controlador/controlador.php" method="POST">
-
- <label for="nombre"> Matricula de la cita</label>
-
-<input type="text" name="nombre" placeholder="Matricula" required>
-
-<label for="correo">Direccion de correo</label>
-
-<input type="email" name="correo" placeholder="alguien@Algo.com"required>
-
-
-<label for="correo">Nombre</label>
-
-<input type="text" name="carrera" placeholder="Nombre"required>
-
-
-<label for="correo">Apellido</label>
-
-<input type="text" name="matricula" placeholder="Apellido"required>
-
-
-<input type="submit" value="Registrar Alumno">
-
-
-
-</form>
-</div>
-      </article>
-
-      <aside id="lateral">
-        <div class="oscuro">
-          <h3>Que hacemos</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec varius auctor lacus nec feugiat. Phasellus sit amet ex ipsum. Praesent pharetra tincidunt tempor. Etiam velit eros, dapibus eget porta in, lacinia et magna</p>
+  <nav class="navbar navbar-expand-md navbar-dark bg-primary" style="">
+    <div class="container"> <a class="navbar-brand" href="#" style="">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="row">
+              <div class="col-md-11 ml-1" style="">
+                <img class="img-fluid d-block rounded" src="img/Sin título-1.png" width="70 80 80" height="80">
+                <p class="mb-0">WORKS</p>
+              </div>
+            </div>
+          </div>
         </div>
-      </aside>
+      </a> <button class="navbar-toggler navbar-toggler-right border-0" type="button" data-toggle="collapse"
+        data-target="#navbar16">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbar16">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item"> <a class="nav-link" onclick="location.href='index.html'">Inicio</a> </li>
+          <li class="nav-item"> <a class="nav-link" href="#">Acerca de nostros</a> </li>
+          <li class="nav-item"> <a class="nav-link" href="#">Privacidad</a> </li>
+          <li class="nav-item"> <a class="nav-link" href="#">FAQ</a> </li>
+        </ul> <a class="btn navbar-btn ml-md-2 btn-light text-dark">Ofrecer Empleo</a>
+      </div>
     </div>
-  </section>
+  </nav>
+ 
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6 jumbotron">
+        <h3>Contacto</h3>
+        <p class="paragraph"> Uno de nuestros asistentes se pondra en contacto contigo para agendar una cita por correo
+          electronico</p>
+        <form class="form-horizontal">
+          <div class="form-group">
+            <label for="nombre"> Matricula de la cita</label>
+            <input class="form-control" type="text" name="nombre" placeholder="Matricula" required="true">
+            <label for="correo">Direccion de correo</label>
+            <input class="form-control" type="email" name="correo" placeholder="alguien@Algo.com" required="true">
+            <label for="correo">Nombre</label>
+            <input type="text" class="form-control" name="carrera" placeholder="Nombre" required="true">
+            <label for="correo">Apellido</label>
+            <input type="text" class="form-control" name="matricula" placeholder="Apellido" required>
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+      </div>
+    </div>
+  </div>
+ <aside class="jumbotron">
+      
+      <h3>Que hacemos</h3>
+      <p>Somos una empresa enfocada en promover las habilidades de nuestra gente</p>
+  
+  </aside>
 
-  <footer>
-    <p>EndoClinic, Copyright &copy; 2017</p>
+  <footer class=".container-fluid bg-primary">
+
   </footer>
-    <script src="js/pooper.min.js"></script>
-    <script src="js/jquery.js"></script>
-    <script src="js/bootstrap.min.js"></script>
+  <script src="js/pooper.min.js"></script>
+  <script src="js/jquery.js"></script>
+  <script src="js/bootstrap.min.js"></script>
 </body>
-
 </html>
