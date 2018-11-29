@@ -5,6 +5,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="css/bootstrap.min.css" />
+<link rel="stylesheet" href="css/animate.min.css">
 <title>Ky Works | Iniciar Sesion</title>
 </head>
 
@@ -35,64 +36,52 @@
       </div>
     </div>
   </nav>
-  <div class="py-0 pt-3">
+
+
+
+  
+  
     <div class="container">
       <div class="row">
-        <div class="col-md-6">
-          <div class="row mt-0">
-            <div class="mx-auto" style="">
-              <h1> INICIA SESION</h1>
-              <form class="">
-                <div class="form-group"> <label>Correo</label> <input type="email" class="form-control" placeholder="Introduce tu email" required="required"> </div>
-                <div class="form-group"><label>Contraseña</label> <input type="password" class="form-control" placeholder="Contraseña" required="true"> </div> <button type="submit" class="btn btn-primary">Entrar</button>
-              </form>
+        <div class="col-md-6">     
+              <form class="form-group jumbotron">
+                <h3 class="animated flash"> INICIA SESION</h3>
+                <div class="form-group"> 
+                <label>Correo</label>
+               <input type="email" class="form-control" placeholder="Introduce tu email" required="required"> 
+                <label>Contraseña</label> 
+                <input type="password" class="form-control" placeholder="Contraseña" required="true"> </div>
+               <button type="submit" class="btn btn-primary">Entrar</button>
               <p class="small">Si aun no te has registrado da <a href="www.google.com">click aqui.</a></p>
-            </div>
+              </form>
+            </div>   
           </div>
         </div>
-        <div class="col-md-6">
-<div class="img-fluid d-block rounded">
+  <
   
-  <img class="mySlides" src="img/baner1.png">
-  <img class="mySlides" src="img/baner2.png">
-  <img class="mySlides" src="img/baner3.png">
-</div>
-</div>
-  
-    <script> //script para que cambie la imagen aun lado del login 
-      var myIndex = 0;
-      carousel();
-
-      function carousel() {
-        var i;
-        var x = document.getElementsByClassName("mySlides");
-      
-        for (i = 0; i < x.length; i++) {
-          x[i].style.display = "none";
-        }
-        myIndex++;
-        if (myIndex > x.length) {
-          myIndex = 1
-        }
-        x[myIndex - 1].style.display = "block";
-        setTimeout(carousel, 3500); // Cambia cada 3.5 segundos 
-      }
-    </script>
-
-
-
-          <p class="ml-2">Somos una empresa interesada en promover tus habilidades.</p>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="text-center" style="opacity: 0.5;">
-    <div class="container">
-    </div>
-  </div>
   
   </body>
 <script src="js/pooper.min.js"></script>
 <script src="js/jquery.js"></script>
 <script src="js/bootstrap.min.js"></script>
+<script>
+  //script para que cambie la imagen aun lado del login 
+  var myIndex = 0;
+  carousel();
+
+  function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+
+    for (i = 0; i < x.length; i++) {
+      x[i].style.display = "none";
+    }
+    myIndex++;
+    if (myIndex > x.length) {
+      myIndex = 1
+    }
+    x[myIndex - 1].style.display = "block";
+    setTimeout(carousel, 3500); // Cambia cada 3.5 segundos 
+  }
+</script>
 </html>
